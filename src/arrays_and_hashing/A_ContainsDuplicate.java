@@ -9,9 +9,12 @@ public class A_ContainsDuplicate {
     Set<Integer> set = new HashSet<>();
     for (int n:
     nums) {
+      if (set.contains(n)){
+        return true;
+      }
       set.add(n);
     }
-    return set.size() != nums.length ? true : false;
+    return false;
   }
 
   public static void main(String[] args) {
@@ -19,7 +22,7 @@ public class A_ContainsDuplicate {
     int[] numTrue = new int[]{1,2,3,1};
     int[] numFalse = new int[]{1,2,3,4};
 
-    containsDuplicate(numTrue);
+    System.out.println(containsDuplicate(numFalse));
   }
 
 }
