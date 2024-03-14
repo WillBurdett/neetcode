@@ -22,6 +22,7 @@ public class C_TwoSum {
   }
 
   // Improved Solution
+  // Notes: Checks if required number is in map. If not, adds current number to the map, and it's index
   public static int[] twoSum2(int[] nums, int target) {
     HashMap<Integer, Integer> map = new HashMap<>();
     for (int i = 0; i < nums.length; i++) {
