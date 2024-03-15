@@ -1,4 +1,4 @@
-package arrays_and_hashing;
+package main.java.arrays_and_hashing;
 
 import java.util.Arrays;
 import java.util.HashMap;
