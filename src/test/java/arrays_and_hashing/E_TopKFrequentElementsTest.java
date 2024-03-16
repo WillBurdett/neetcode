@@ -6,12 +6,12 @@ import org.junit.Test;
 
 public class E_TopKFrequentElementsTest {
 
-  public final int[] TEST1_INPUT = new int[]{1,1,1,2,2,3};
-  public final int[] TEST1_EXPECTED = new int[]{1,2};
+  public final int[] TEST1_INPUT = {1,1,1,2,2,3};
+  public final int[] TEST1_EXPECTED = {1,2};
   public final int TEST1_K = 2;
 
-  public final int[] TEST2_INPUT = new int[]{1};
-  public final int[] TEST2_EXPECTED = new int[]{1};
+  public final int[] TEST2_INPUT = {1};
+  public final int[] TEST2_EXPECTED = {1};
   public final int TEST2_K = 1;
 
   @Test
