@@ -2,7 +2,9 @@ package two_pointers;
 
 import static org.junit.Assert.*;
 
+import java.io.IOException;
 import org.junit.Test;
+import utils.Utils;
 
 public class A_ValidPalindromeTest {
 
@@ -45,6 +47,14 @@ public class A_ValidPalindromeTest {
     String str = "0P";
     boolean actual = undertest.isPalindrome(str);
     boolean expected = false;
+    assertEquals(expected, actual);
+  }
+
+  @Test
+  public void longestConsecutiveSequence_handlesVeryLongPalindrome() throws IOException {
+    String str = Utils.inputToString("src/main/resources/inputs/palindrome.txt");
+    boolean actual = undertest.isPalindrome(str);
+    boolean expected = true;
     assertEquals(expected, actual);
   }
 
