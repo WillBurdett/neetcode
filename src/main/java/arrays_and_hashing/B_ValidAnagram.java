@@ -1,4 +1,4 @@
-package main.java.arrays_and_hashing;
+package arrays_and_hashing;
 
 import java.util.Arrays;
 
