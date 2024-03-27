@@ -2,6 +2,25 @@ package sliding_window;
 
 public class A_BestTimeToBuyAndSellStock {
 
+  // OFFICIAL SOLUTION
+  public int maxProfitOfficial(int[] prices) {
+    int l = 0;
+    int r = 1;
+    int maxProfit = 0;
+
+    while (r < prices.length){
+      if (prices[l] < prices[r]) {
+        int profit = prices[r] - prices[l];
+        maxProfit = profit > maxProfit ? profit : maxProfit;
+      } else {
+        l = r;
+      }
+      r++;
+    }
+
+    return maxProfit;
+  }
+
   // ORIGINAL SOLUTION
   public int maxProfit(int[] prices) {
     if (prices.length <= 1 ){
