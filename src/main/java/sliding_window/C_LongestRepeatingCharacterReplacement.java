@@ -32,7 +32,7 @@ public class C_LongestRepeatingCharacterReplacement {
     return res;
   }
 
-  // UNOFFICIAL BUT FASTER SOLUTION
+  // UNOFFICIAL SOLUTION (faster)
   public int characterReplacementUnofficial(String s, int k) {
     int[] freq = new int[26];
     int mostFreqLetter = 0;
