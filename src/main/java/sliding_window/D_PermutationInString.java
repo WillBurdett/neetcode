@@ -1,8 +1,5 @@
 package sliding_window;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class D_PermutationInString {
 
   public boolean checkInclusion(String s1, String s2) {
@@ -13,7 +10,6 @@ public class D_PermutationInString {
     int[] s1Count = new int[26];
     int[] s2Count = new int[26];
 
-    Map<Character, Integer> map = new HashMap<>();
     for (int i = 0; i < s1.length(); i++) {
       s1Count[s1.charAt(i) - 'a']++;
       s2Count[s2.charAt(i) - 'a']++;
