@@ -52,5 +52,4 @@ public class E_MinimumWindowSubstringTest {
     String expected = "";
     assertEquals(expected, actual);
   }
-
 }
