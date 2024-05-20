@@ -1,12 +1,43 @@
 package sliding_window;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class F_SlidingWindowMaximum {
 
-  public static int[] maxSlidingWindow(int[] nums, int k) {
+  // OFFICIAL SOLUTION (DEQUE pronounced DECK or DE-QUEUE)
+  public int[] maxSlidingWindow(int[] nums, int k) {
+  List<Integer> result = new ArrayList<>();
+  int l = 0;
+  int r = 0;
+  ArrayDeque<Integer> q = new ArrayDeque<>();
+
+  while (r < nums.length){
+    // pop smaller values from q
+    while (q.size() != 0 && nums[q.peekLast()] < nums[r]){
+      q.pollLast();
+    }
+    q.offerLast(r);
+
+    // remove left val from window
+    if (l > q.peekFirst()){
+      q.pollFirst();
+    }
+
+    // check our window is at least size k
+    if (r + 1 >= k){
+      result.add(nums[q.peekFirst()]);
+      l++;
+    }
+     r++;
+    }
+    return result.stream().mapToInt(Integer::intValue).toArray();
+  }
+
+  // ORIGINAL SOLUTION
+  public int[] maxSlidingWindowOriginal(int[] nums, int k) {
     List<Integer> result = new ArrayList<>();
     int l = 0;
     for (int r = 0; r < nums.length; r++) {
@@ -20,15 +51,9 @@ public class F_SlidingWindowMaximum {
     return result.stream().mapToInt(Integer::intValue).toArray();
   }
 
-  public static int findMaxInteger(int[] arr){
+  public int findMaxInteger(int[] arr){
     Arrays.sort(arr);
     return arr[arr.length - 1];
-  }
-
-  public static void main(String[] args) {
-    int[] nums = {1,2,1,0,4,2,6};
-    int k = 3;
-    System.out.println(maxSlidingWindow(nums, k));
   }
 
 }
