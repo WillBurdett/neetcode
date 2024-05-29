@@ -31,4 +31,28 @@ public class A_ValidParenthesesTest {
     boolean expected = false;
     assertEquals(expected, actual);
   }
+
+  @Test
+  public void isValidOfficial_shortValidStringReturnsTrue() {
+    String s = "[]";
+    boolean actual = undertest.isValidUsingHashMap(s);
+    boolean expected = true;
+    assertEquals(expected, actual);
+  }
+
+  @Test
+  public void isValidOfficial_mediumValidStringReturnsTrue() {
+    String s = "([{}])";
+    boolean actual = undertest.isValidUsingHashMap(s);
+    boolean expected = true;
+    assertEquals(expected, actual);
+  }
+
+  @Test
+  public void isValidOfficial_mediumInvalidStringReturnsFalse() {
+    String s = "[(])";
+    boolean actual = undertest.isValidUsingHashMap(s);
+    boolean expected = false;
+    assertEquals(expected, actual);
+  }
 }
