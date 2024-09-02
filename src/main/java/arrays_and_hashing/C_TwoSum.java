@@ -1,6 +1,5 @@
 package arrays_and_hashing;
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class C_TwoSum {
@@ -23,7 +22,7 @@ public class C_TwoSum {
 
   // Improved Solution
   // Notes: Checks if required number is in map. If not, adds current number to the map, and it's index
-  public static int[] twoSum2(int[] nums, int target) {
+  public int[] twoSum2(int[] nums, int target) {
     HashMap<Integer, Integer> map = new HashMap<>();
     for (int i = 0; i < nums.length; i++) {
       if (map.containsKey(target - nums[i])){
@@ -34,9 +33,4 @@ public class C_TwoSum {
     return new int[]{};
   }
 
-  public static void main(String[] args) {
-    int[] numArr = new int[]{2, 7, 11, 15};
-    int target = 9;
-    System.out.println(Arrays.toString(twoSum2(numArr, target)));
-  }
 }
