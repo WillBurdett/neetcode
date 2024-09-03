@@ -1,4 +1,4 @@
-package main.java.arrays_and_hashing;
+package arrays_and_hashing;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +7,7 @@ import java.util.List;
 
 public class D_GroupAnagrams {
 
-  public static List<List<String>> groupAnagrams(String[] strs) {
+  public List<List<String>> groupAnagrams(String[] strs) {
     // sorted string : list of anagrams
     HashMap<String, List<String>> result = new HashMap<>();
 
@@ -23,11 +23,6 @@ public class D_GroupAnagrams {
         result.put(aSorted, list);
     }
     return new ArrayList<>(result.values());
-  }
-
-  public static void main(String[] args) {
-    String[] input = new String[]{"eat","tea","tan","ate","nat","bat"};
-    System.out.println(groupAnagrams(input));
   }
 
 }
