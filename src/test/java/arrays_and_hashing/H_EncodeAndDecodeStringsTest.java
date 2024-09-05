@@ -2,8 +2,10 @@ package arrays_and_hashing;
 
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.junit.Test;
+import practise.PractisePad;
 
 public class H_EncodeAndDecodeStringsTest {
 
@@ -32,6 +34,19 @@ public class H_EncodeAndDecodeStringsTest {
   public void decode_doesDecodeFromBase64(){
     List<String> actual = undertest.decode(ENCODED_STRING);
     List<String> expected = DECODED_LIST;
+    assertEquals(expected, actual);
+  }
+
+  @Test
+  public void encode_doesEncodeOfficial(){
+    String actual = undertest.encodeOfficial(List.of("neet","code","love","you"));
+    assertEquals("4#neet4#code4#love3#you", actual);
+  }
+
+  @Test
+  public void decode_doesDecodeOfficial(){
+    List<String> actual = undertest.decodeOfficial("4#neet4#code4#love3#you");
+    List<String> expected = List.of("neet","code","love","you");
     assertEquals(expected, actual);
   }
 
