@@ -12,15 +12,17 @@ public class F_ProductOfArrayExceptSelfTest {
   private final int[] TEST2_INPUT = {-1,1,0,-3,3};
   private final int[] TEST2_EXPECTED = {0,0,9,0,0};
 
+  F_ProductOfArrayExceptSelf undertest = new F_ProductOfArrayExceptSelf();
+
   @Test
   public void productExceptSelf_TEST1_HappyPath() {
-    int[] actual = F_ProductOfArrayExceptSelf.productExceptSelf(TEST1_INPUT);
+    int[] actual = undertest.productExceptSelf(TEST1_INPUT);
     assertArrayEquals(TEST1_EXPECTED, actual);
   }
 
   @Test
   public void productExceptSelf_TEST2_HappyPath() {
-    int[] actual = F_ProductOfArrayExceptSelf.productExceptSelf(TEST2_INPUT);
+    int[] actual = undertest.productExceptSelf(TEST2_INPUT);
     assertArrayEquals(TEST2_EXPECTED, actual);
   }
 }

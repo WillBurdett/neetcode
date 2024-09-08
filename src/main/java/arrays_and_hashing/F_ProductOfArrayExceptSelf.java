@@ -2,7 +2,7 @@ package arrays_and_hashing;
 
 public class F_ProductOfArrayExceptSelf {
 
-  public static int[] productExceptSelf(int[] nums) {
+  public int[] productExceptSelf(int[] nums) {
     int[] result = new int[nums.length];
     // Notes:
     // Calculating then storing the prefixed values
@@ -42,10 +42,4 @@ public class F_ProductOfArrayExceptSelf {
 
     return result;
   }
-
-  public static void main(String[] args) {
-    int[] input = {1,2,3,4};
-    System.out.println(productExceptSelf(input));
-  }
-
 }
