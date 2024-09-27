@@ -3,10 +3,11 @@ package two_pointers;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class E_TrappingRainWaterTest {
 
-  private E_TrappingRainWater undertest = new E_TrappingRainWater();
+  private PractisePad undertest = new PractisePad();
 
   @Test
   public void trap_HappyPath(){

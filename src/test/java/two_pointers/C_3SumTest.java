@@ -4,10 +4,11 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 import org.junit.Test;
+import practise.PractisePad;
 
 public class C_3SumTest {
 
-  private final C_3Sum undertest = new C_3Sum();
+  private final PractisePad undertest = new PractisePad();
 
   @Test
   public void threeSum_happyPath1(){
