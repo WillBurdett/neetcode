@@ -8,10 +8,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import org.junit.Test;
+import practise.PractisePad;
 
 public class D_GroupAnagramsTest {
 
-  private D_GroupAnagrams undertest = new D_GroupAnagrams();
+  private PractisePad undertest = new PractisePad();
 
   @Test
   public void groupAnagrams_happyPath1(){

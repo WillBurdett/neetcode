@@ -3,6 +3,7 @@ package arrays_and_hashing;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class E_TopKFrequentElementsTest {
 
@@ -18,7 +19,7 @@ public class E_TopKFrequentElementsTest {
   public final int[] TEST3_EXPECTED = {1, 2};
   public final int TEST3_K = 2;
 
-  private E_TopKFrequentElements undertest = new E_TopKFrequentElements();
+  private PractisePad undertest = new PractisePad();
 
   @Test
   public void topKFrequent_TEST1_HappyPath() {

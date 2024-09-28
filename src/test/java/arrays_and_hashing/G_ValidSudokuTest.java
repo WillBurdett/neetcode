@@ -3,10 +3,11 @@ package arrays_and_hashing;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class G_ValidSudokuTest {
 
-  private final G_ValidSudoku undertest = new G_ValidSudoku();
+  private final PractisePad undertest = new PractisePad();
 
   char[][] ROW_DUPLICATE_INPUT = {
       {'5','.','5','.','5','.','5','.','5'}
