@@ -3,10 +3,11 @@ package sliding_window;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class C_LongestRepeatingCharacterReplacementTest {
 
-  private final C_LongestRepeatingCharacterReplacement undertest = new C_LongestRepeatingCharacterReplacement();
+  private final PractisePad undertest = new PractisePad();
 
   @Test
   public void characterReplacement_HappyPath1() {
