@@ -3,11 +3,12 @@ package sliding_window;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class B_LongestSubstringWithoutRepeatingCharactersTest {
 
-  private final B_LongestSubstringWithoutRepeatingCharacters undertest =
-      new B_LongestSubstringWithoutRepeatingCharacters();
+  private final PractisePad undertest =
+      new PractisePad();
 
   @Test
   public void lengthOfLongestSubstring_HappyPath1() {
