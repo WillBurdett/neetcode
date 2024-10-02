@@ -19,6 +19,15 @@ public class D_PermutationInStringTest {
   }
 
   @Test
+  public void checkInclusion_returnsTrue2() {
+    String s1 = "adc";
+    String s2 = "dcda";
+    boolean actual = undertest.checkInclusion(s1, s2);
+    boolean expected = true;
+    assertEquals(expected, actual);
+  }
+
+  @Test
   public void checkInclusion_returnsFalse() {
     String s1 = "ab";
     String s2 = "eidboaoo";
@@ -33,15 +42,6 @@ public class D_PermutationInStringTest {
     String s2 = "ooolleoooleh";
     boolean actual = undertest.checkInclusion(s1, s2);
     boolean expected = false;
-    assertEquals(expected, actual);
-  }
-
-  @Test
-  public void checkInclusion_returnsFalse3() {
-    String s1 = "adc";
-    String s2 = "dcda";
-    boolean actual = undertest.checkInclusion(s1, s2);
-    boolean expected = true;
     assertEquals(expected, actual);
   }
 }
