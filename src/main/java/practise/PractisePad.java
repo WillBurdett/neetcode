@@ -12,4 +12,8 @@ public class PractisePad {
   public int characterReplacement(String s, int k) {
     return 0;
   }
+
+  public boolean checkInclusion(String s1, String s2) {
+    return false;
+  }
 }
