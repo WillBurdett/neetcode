@@ -3,10 +3,11 @@ package sliding_window;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class E_MinimumWindowSubstringTest {
 
-  E_MinimumWindowSubstring undertest = new E_MinimumWindowSubstring();
+  PractisePad undertest = new PractisePad();
 
   @Test
   public void minWindow_happyPath() {
@@ -14,6 +15,24 @@ public class E_MinimumWindowSubstringTest {
     String t = "ABC";
     String actual = undertest.minWindow(s, t);
     String expected = "BANC";
+    assertEquals(expected, actual);
+  }
+
+  @Test
+  public void minWindow_happyPath2() {
+    String s = "a";
+    String t = "a";
+    String actual = undertest.minWindow(s, t);
+    String expected = "a";
+    assertEquals(expected, actual);
+  }
+
+  @Test
+  public void minWindow_happyPath3() {
+    String s = "a";
+    String t = "aa";
+    String actual = undertest.minWindow(s, t);
+    String expected = "";
     assertEquals(expected, actual);
   }
 
@@ -35,21 +54,4 @@ public class E_MinimumWindowSubstringTest {
     assertEquals(expected, actual);
   }
 
-  @Test
-  public void minWindow_happyPath2() {
-    String s = "a";
-    String t = "a";
-    String actual = undertest.minWindow(s, t);
-    String expected = "a";
-    assertEquals(expected, actual);
-  }
-
-  @Test
-  public void minWindow_happyPath3() {
-    String s = "a";
-    String t = "aa";
-    String actual = undertest.minWindow(s, t);
-    String expected = "";
-    assertEquals(expected, actual);
-  }
 }

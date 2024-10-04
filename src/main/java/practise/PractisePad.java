@@ -16,4 +16,8 @@ public class PractisePad {
   public boolean checkInclusion(String s1, String s2) {
     return false;
   }
+
+  public String minWindow(String s, String t) {
+    return "";
+  }
 }
