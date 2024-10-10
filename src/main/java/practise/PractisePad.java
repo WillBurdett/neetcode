@@ -20,4 +20,8 @@ public class PractisePad {
   public String minWindow(String s, String t) {
     return "";
   }
+
+  public int[] maxSlidingWindow(int[] nums, int k) {
+    return new int[]{};
+  }
 }
