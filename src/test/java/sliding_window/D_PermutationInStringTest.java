@@ -7,7 +7,7 @@ import practise.PractisePad;
 
 public class D_PermutationInStringTest {
 
-  private final PractisePad undertest = new PractisePad();
+  private final  D_PermutationInString undertest = new  D_PermutationInString();
 
   @Test
   public void checkInclusion_returnsTrue() {

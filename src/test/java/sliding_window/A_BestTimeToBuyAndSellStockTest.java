@@ -3,11 +3,10 @@ package sliding_window;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import practise.PractisePad;
 
 public class A_BestTimeToBuyAndSellStockTest {
 
-  private final PractisePad undertest = new PractisePad();
+  private final A_BestTimeToBuyAndSellStock undertest = new A_BestTimeToBuyAndSellStock();
 
   @Test
   public void maxProfit_ReturnsMaximumProfit() {

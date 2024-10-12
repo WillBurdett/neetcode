@@ -8,7 +8,7 @@ import practise.PractisePad;
 
 public class F_SlidingWindowMaximumTest {
 
-  PractisePad undertest = new PractisePad();
+  F_SlidingWindowMaximum undertest = new F_SlidingWindowMaximum();
 
   @Test
   public void maxSlidingWindowOfficial_HappyPath() {

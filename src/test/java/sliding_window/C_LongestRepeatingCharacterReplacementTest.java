@@ -7,7 +7,7 @@ import practise.PractisePad;
 
 public class C_LongestRepeatingCharacterReplacementTest {
 
-  private final PractisePad undertest = new PractisePad();
+  private final C_LongestRepeatingCharacterReplacement undertest = new C_LongestRepeatingCharacterReplacement();
 
   @Test
   public void characterReplacement_HappyPath1() {

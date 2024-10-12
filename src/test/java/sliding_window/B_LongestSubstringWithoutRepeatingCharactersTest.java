@@ -7,8 +7,8 @@ import practise.PractisePad;
 
 public class B_LongestSubstringWithoutRepeatingCharactersTest {
 
-  private final PractisePad undertest =
-      new PractisePad();
+  private final B_LongestSubstringWithoutRepeatingCharacters undertest =
+      new B_LongestSubstringWithoutRepeatingCharacters();
 
   @Test
   public void lengthOfLongestSubstring_HappyPath1() {

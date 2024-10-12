@@ -7,7 +7,7 @@ import practise.PractisePad;
 
 public class E_MinimumWindowSubstringTest {
 
-  PractisePad undertest = new PractisePad();
+  E_MinimumWindowSubstring undertest = new E_MinimumWindowSubstring();
 
   @Test
   public void minWindow_happyPath() {
