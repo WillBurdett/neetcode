@@ -4,10 +4,11 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 import org.junit.Test;
+import practise.PractisePad;
 
 public class B_MinStackTest {
 
-  private final B_MinStack undertest = new B_MinStack();
+  private final PractisePad undertest = new PractisePad();
 
   @Test
   public void push() {
