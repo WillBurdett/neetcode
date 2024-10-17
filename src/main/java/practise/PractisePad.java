@@ -31,4 +31,8 @@ public class PractisePad {
   public int getMin() {
     return 0;
   }
+
+  public int evalRPN(String[] tokens) {
+    return 0;
+  }
 }
