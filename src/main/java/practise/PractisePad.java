@@ -2,6 +2,8 @@ package practise;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
+import java.util.stream.Collectors;
 
 public class PractisePad {
   public boolean isValid(String s) {
@@ -34,5 +36,9 @@ public class PractisePad {
 
   public int evalRPN(String[] tokens) {
     return 0;
+  }
+
+  public List<String> generateParenthesis(int n) {
+    return null;
   }
 }
