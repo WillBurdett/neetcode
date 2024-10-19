@@ -2,8 +2,6 @@ package practise;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Stack;
-import java.util.stream.Collectors;
 
 public class PractisePad {
   public boolean isValid(String s) {
@@ -40,5 +38,9 @@ public class PractisePad {
 
   public List<String> generateParenthesis(int n) {
     return null;
+  }
+
+  public int[] dailyTemperatures(int[] temperatures) {
+    return new int[]{};
   }
 }
