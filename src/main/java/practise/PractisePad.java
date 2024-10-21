@@ -47,4 +47,8 @@ public class PractisePad {
   public int carFleet(int target, int[] position, int[] speed) {
     return 0;
   }
+
+  public int largestRectangleArea(int[] heights) {
+    return 0;
+  }
 }
