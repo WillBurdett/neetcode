@@ -8,7 +8,7 @@ import practise.PractisePad;
 
 public class E_DailyTemperaturesTest {
 
-  PractisePad undertest = new PractisePad();
+  private final PractisePad undertest = new PractisePad();
 
   @Test
   public void dailyTemperatures_happyPath1() {

@@ -43,4 +43,8 @@ public class PractisePad {
   public int[] dailyTemperatures(int[] temperatures) {
     return new int[]{};
   }
+
+  public int carFleet(int target, int[] position, int[] speed) {
+    return 0;
+  }
 }
