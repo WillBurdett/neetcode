@@ -3,11 +3,10 @@ package stack;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import practise.PractisePad;
 
 public class G_LargestRectangleInHistogramTest {
 
-  private final PractisePad undertest = new PractisePad();
+  private final G_LargestRectangleInHistogram undertest = new G_LargestRectangleInHistogram();
 
   @Test
   public void largestRectangleArea_happyPath1() {

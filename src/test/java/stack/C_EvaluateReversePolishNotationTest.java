@@ -3,11 +3,10 @@ package stack;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import practise.PractisePad;
 
 public class C_EvaluateReversePolishNotationTest {
 
-  private final PractisePad undertest = new PractisePad();
+  private final C_EvaluateReversePolishNotation undertest = new C_EvaluateReversePolishNotation();
 
   @Test
   public void evalRPN() {

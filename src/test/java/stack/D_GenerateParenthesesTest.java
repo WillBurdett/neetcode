@@ -4,11 +4,10 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 import org.junit.Test;
-import practise.PractisePad;
 
 public class D_GenerateParenthesesTest {
 
-  PractisePad undertest = new PractisePad();
+  D_GenerateParentheses undertest = new D_GenerateParentheses();
 
   @Test
   public void generateParenthesis_happyPathFor1() {

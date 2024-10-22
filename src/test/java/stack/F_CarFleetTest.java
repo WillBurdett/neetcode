@@ -3,11 +3,10 @@ package stack;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import practise.PractisePad;
 
 public class F_CarFleetTest {
 
-  private final PractisePad undertest = new PractisePad();
+  private final F_CarFleet undertest = new F_CarFleet();
 
 
   @Test

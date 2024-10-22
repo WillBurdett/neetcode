@@ -2,13 +2,11 @@ package stack;
 
 import static org.junit.Assert.*;
 
-import java.util.List;
 import org.junit.Test;
-import practise.PractisePad;
 
 public class E_DailyTemperaturesTest {
 
-  private final PractisePad undertest = new PractisePad();
+  private final E_DailyTemperatures undertest = new E_DailyTemperatures();
 
   @Test
   public void dailyTemperatures_happyPath1() {

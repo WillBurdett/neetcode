@@ -3,11 +3,10 @@ package stack;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
-import practise.PractisePad;
 
 public class A_ValidParenthesesTest {
 
-  private final PractisePad undertest = new PractisePad();
+  private final A_ValidParentheses undertest = new A_ValidParentheses();
 
   @Test
   public void isValid_shortValidStringReturnsTrue() {
