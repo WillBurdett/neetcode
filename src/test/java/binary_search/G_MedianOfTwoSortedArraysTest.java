@@ -63,4 +63,15 @@ public class G_MedianOfTwoSortedArraysTest {
     assertEquals("Median was incorrect for sorted array {1, 2, 3, 4, 5}", expected, actual, 0);
   }
 
+  @Test
+  public void findMedianSortedArrays_bothArraysAreLength1() {
+    final int[] nums1 = new int[]{1};
+    final int[] nums2 = new int[]{2};
+
+    final double expected = 1.5; // The median of {1, 2} is 1.5
+    final double actual = undertest.findMedianSortedArrays(nums1, nums2);
+
+    assertEquals("Median was incorrect for sorted array {1, 2}", expected, actual, 0);
+  }
+
 }

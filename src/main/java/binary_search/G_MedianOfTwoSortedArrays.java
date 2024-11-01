@@ -12,10 +12,10 @@ public class G_MedianOfTwoSortedArrays {
     }
 
     // Initialize binary search bounds for nums1
-    int low = 0, high = n;
-    while (low <= high) {
+    int leftPointer = 0, rightPointer = n;
+    while (leftPointer <= rightPointer) {
       // Calculate midpoints in nums1 and corresponding position in nums2
-      int mid1 = (low + high) / 2;
+      int mid1 = (leftPointer + rightPointer) / 2;
       int mid2 = (n + m + 1) / 2 - mid1;
 
       // Calculate the boundary elements on either side of the partitions
@@ -38,13 +38,13 @@ public class G_MedianOfTwoSortedArrays {
       }
 
       // Adjust binary search range if partition is invalid
-      // If l1 > r2, move high pointer to reduce l1
+      // If l1 > r2, move right pointer to reduce l1
       if (l1 > r2) {
-        high = mid1 - 1;
+        rightPointer = mid1 - 1;
       }
-      // If l2 > r1, move low pointer to increase l1
+      // If l2 > r1, move left pointer to increase l1
       else {
-        low = mid1 + 1;
+        leftPointer = mid1 + 1;
       }
     }
 
