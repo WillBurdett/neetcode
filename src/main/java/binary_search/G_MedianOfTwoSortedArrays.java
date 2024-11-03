@@ -16,6 +16,8 @@ public class G_MedianOfTwoSortedArrays {
     while (leftPointer <= rightPointer) {
       // Calculate midpoints in nums1 and corresponding position in nums2
       int mid1 = (leftPointer + rightPointer) / 2;
+
+      // as mid1 increases, mid2 will now decrease
       int mid2 = (n + m + 1) / 2 - mid1;
 
       // Calculate the boundary elements on either side of the partitions
@@ -38,19 +40,18 @@ public class G_MedianOfTwoSortedArrays {
       }
 
       // Adjust binary search range if partition is invalid
-      // If l1 > r2, move right pointer to reduce l1
+      // If l1 > r2, move right pointer to reduce the left portion of nums1 and reduce l1
       if (l1 > r2) {
         rightPointer = mid1 - 1;
       }
-      // If l2 > r1, move left pointer to increase l1
+      // If l2 > r1, l2 is the issue. we move left pointer to increase l1 (mid1) which lowers l2 (mid2)
       else {
         leftPointer = mid1 + 1;
       }
     }
 
     // This line should not be reached for valid input arrays
-    return 0;
+    return 0.0;
   }
-
 
 }
