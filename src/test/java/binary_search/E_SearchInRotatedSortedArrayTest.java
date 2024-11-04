@@ -3,10 +3,11 @@ package binary_search;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class E_SearchInRotatedSortedArrayTest {
 
-  private final E_SearchInRotatedSortedArray undertest = new E_SearchInRotatedSortedArray();
+  private final PractisePad undertest = new PractisePad();
 
   @Test
   public void search_targetFoundReturnsIndex() {
@@ -14,7 +15,7 @@ public class E_SearchInRotatedSortedArrayTest {
     final int target = 1;
 
     final int expected = 4;
-    final int actual = undertest.search(nums, target);
+    final int actual = undertest.searchRotated(nums, target);
 
     assertEquals(expected, actual);
   }
@@ -25,7 +26,7 @@ public class E_SearchInRotatedSortedArrayTest {
     final int target = 4;
 
     final int expected = -1;
-    final int actual = undertest.search(nums, target);
+    final int actual = undertest.searchRotated(nums, target);
 
     assertEquals(expected, actual);
   }

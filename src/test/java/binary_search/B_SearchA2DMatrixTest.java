@@ -3,10 +3,11 @@ package binary_search;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class B_SearchA2DMatrixTest {
 
-  private final B_SearchA2DMatrix undertest = new B_SearchA2DMatrix();
+  private final PractisePad undertest = new PractisePad();
 
   @Test
   public void searchMatrix_happyPath1() {

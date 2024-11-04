@@ -3,10 +3,11 @@ package binary_search;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class G_MedianOfTwoSortedArraysTest {
 
-  private final G_MedianOfTwoSortedArrays undertest = new G_MedianOfTwoSortedArrays();
+  private final PractisePad undertest = new PractisePad();
 
   @Test
   public void findMedianSortedArrays_happyPath() {

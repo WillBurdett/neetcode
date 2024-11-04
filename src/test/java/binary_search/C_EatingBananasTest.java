@@ -3,10 +3,11 @@ package binary_search;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class C_EatingBananasTest {
 
-  private final C_EatingBananas undertest = new C_EatingBananas();
+  private final PractisePad undertest = new PractisePad();
 
   @Test
   public void minEatingSpeed_happyPath1() {

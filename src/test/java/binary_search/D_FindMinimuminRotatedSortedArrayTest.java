@@ -3,10 +3,11 @@ package binary_search;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import practise.PractisePad;
 
 public class D_FindMinimuminRotatedSortedArrayTest {
 
-  private final D_FindMinimumInRotatedSortedArray undertest = new D_FindMinimumInRotatedSortedArray();
+  private final PractisePad undertest = new PractisePad();
 
   @Test
   public void findMin_happyPath1() {
