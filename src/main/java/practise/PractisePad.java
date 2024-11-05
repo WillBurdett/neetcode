@@ -68,10 +68,87 @@ public class PractisePad {
     return false;
   }
 
+  /**
+   * <h2><strong>Eating Bananas</strong></h2>
+   *
+   * You are given an integer array `piles` where `piles[i]` is the number of bananas in the i-th pile.
+   * You are also given an integer `h`, which represents the number of hours you have to eat all the bananas.
+   *
+   * You may decide your bananas-per-hour eating rate of `k`. Each hour, you may choose a pile of bananas and eat `k` bananas from that pile.
+   * If the pile has fewer than `k` bananas, you may finish eating the pile, but you cannot eat from another pile in the same hour.
+   *
+   * Return the minimum integer `k` such that you can eat all the bananas within `h` hours.
+   *
+   * <p><strong>Example 1:</strong></p>
+   * <pre>
+   * Input: piles = [1,4,3,2], h = 9
+   * Output: 2
+   * Explanation:
+   * With an eating rate of 2, you can eat the bananas in 6 hours.
+   * With an eating rate of 1, you would need 10 hours to eat all the bananas
+   * (which exceeds h = 9), so the minimum eating rate is 2.
+   * </pre>
+   *
+   * <p><strong>Example 2:</strong></p>
+   * <pre>
+   * Input: piles = [25,10,23,4], h = 4
+   * Output: 25
+   * </pre>
+   *
+   * <p><strong>Constraints:</strong></p>
+   * <ul>
+   *   <li>1 <= piles.length <= 1,000</li>
+   *   <li>piles.length <= h <= 1,000,000</li>
+   *   <li>1 <= piles[i] <= 1,000,000,000</li>
+   * </ul>
+   */
   public int minEatingSpeed(int[] piles, int h) {
     return 0;
   }
 
+  /**
+   *
+   * <h2><strong>Find Minimum in Rotated Sorted Array</strong></h2>
+   *
+   * You are given an array of length `n` that was originally sorted in ascending order and has now been rotated
+   * between 1 and `n` times. For example, the array `nums = [1,2,3,4,5,6]` might become:
+   *
+   * <pre>
+   * [3,4,5,6,1,2] if it was rotated 4 times.
+   * [1,2,3,4,5,6] if it was rotated 6 times.
+   * </pre>
+   *
+   * Notice that rotating the array 4 times moves the last four elements of the array to the beginning. Rotating
+   * the array 6 times produces the original array.
+   *
+   * Assuming all elements in the rotated sorted array `nums` are unique, return the minimum element of this array.
+   *
+   * A solution that runs in O(n) time is trivial; can you write an algorithm that runs in O(log n) time?
+   *
+   * <p><strong>Example 1:</strong></p>
+   * <pre>
+   * Input: nums = [3,4,5,6,1,2]
+   * Output: 1
+   * </pre>
+   *
+   * <p><strong>Example 2:</strong></p>
+   * <pre>
+   * Input: nums = [4,5,0,1,2,3]
+   * Output: 0
+   * </pre>
+   *
+   * <p><strong>Example 3:</strong></p>
+   * <pre>
+   * Input: nums = [4,5,6,7]
+   * Output: 4
+   * </pre>
+   *
+   * <p><strong>Constraints:</strong></p>
+   * <ul>
+   *   <li>1 <= nums.length <= 1000</li>
+   *   <li>-1000 <= nums[i] <= 1000</li>
+   * </ul>
+   */
   public int findMin(int[] nums) {
     return 0;
   }
