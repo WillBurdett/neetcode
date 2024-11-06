@@ -153,12 +153,85 @@ public class PractisePad {
     return 0;
   }
 
+  /**
+   * <h2><strong>Find Target in Rotated Sorted Array</strong></h2>
+   *
+   * Finds the index of a target value within a sorted and rotated array.
+   * <p>
+   * You are given an array of length n that was originally sorted in ascending order.
+   * The array has been rotated between 1 and n times. For example:
+   * <ul>
+   *     <li>If the array is nums = [1,2,3,4,5,6] and rotated 4 times, it becomes [3,4,5,6,1,2].</li>
+   *     <li>If the array is rotated 6 times, it remains [1,2,3,4,5,6].</li>
+   * </ul>
+   * Given the rotated sorted array `nums` and an integer `target`, this method returns the
+   * index of `target` within `nums`, or -1 if `target` is not present.
+   * <p>
+   * All elements in the array `nums` are unique, and the function aims to solve this
+   * problem in O(log n) time complexity.
+   *
+   * <p><b>Examples:</b></p>
+   * <pre>
+   * Example 1:
+   * Input: nums = [3,4,5,6,1,2], target = 1
+   * Output: 4
+   *
+   * Example 2:
+   * Input: nums = [3,5,6,0,1,2], target = 4
+   * Output: -1
+   * </pre>
+   *
+   * <p><b>Constraints:</b></p>
+   * <ul>
+   *     <li>1 <= nums.length <= 1000</li>
+   *     <li>-1000 <= nums[i] <= 1000</li>
+   *     <li>-1000 <= target <= 1000</li>
+   * </ul>
+   *
+   */
   public int searchRotated(int[] nums, int target) {
     return 0;
   }
 
   // Complete TimeMap in TimeMap class
 
+  /**
+   * <h2><strong>Median of Two Sorted Arrays</strong></h2>
+   *
+   * Finds the median value among all elements of two sorted integer arrays.
+   * <p>
+   * You are given two integer arrays, `nums1` and `nums2`, of size `m` and `n` respectively,
+   * where each array is sorted in ascending order. This method returns the median value
+   * of the combined elements from `nums1` and `nums2`.
+   * <p>
+   * The solution must achieve a time complexity of O(log(m + n)).
+   *
+   * <p><b>Examples:</b></p>
+   * <pre>
+   * Example 1:
+   * Input: nums1 = [1,2], nums2 = [3]
+   * Output: 2.0
+   * Explanation: Combined, the elements are [1, 2, 3], and the median is 2.
+   *
+   * Example 2:
+   * Input: nums1 = [1,3], nums2 = [2,4]
+   * Output: 2.5
+   * Explanation: Combined, the elements are [1, 2, 3, 4], and the median is (2 + 3) / 2 = 2.5.
+   * </pre>
+   *
+   * <p><b>Constraints:</b></p>
+   * <ul>
+   *     <li>nums1.length == m</li>
+   *     <li>nums2.length == n</li>
+   *     <li>0 <= m <= 1000</li>
+   *     <li>0 <= n <= 1000</li>
+   *     <li>-10^6 <= nums1[i], nums2[i] <= 10^6</li>
+   * </ul>
+   *
+   * @param nums1 The first sorted array of integers.
+   * @param nums2 The second sorted array of integers.
+   * @return The median value of the combined elements from `nums1` and `nums2`.
+   */
   public double findMedianSortedArrays(int[] nums1, int[] nums2) {
     return 0;
   }
