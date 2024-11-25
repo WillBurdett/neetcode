@@ -55,8 +55,4 @@ public class A_ValidPalindrome {
     return true;
   }
 
-  public static void main(String[] args) throws IOException {
-    System.out.println(Utils.inputToString("src/main/resources/inputs/palindrome.txt"));
-  }
-
 }

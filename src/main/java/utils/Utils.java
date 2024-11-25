@@ -2,8 +2,8 @@ package utils;
 
 import java.io.File;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.Scanner;
+import linked_list.ListNode;
 
 public class Utils {
 
@@ -18,12 +18,13 @@ public class Utils {
     return result;
   }
 
-  public static String testLocalDate(){
-    System.out.println(LocalDate.parse("2023-03-03"));
-    return"";
-  }
-  public static void main(String[] args) {
-    testLocalDate();
+  public static ListNode createListNodeHead(int[] arr){
+    ListNode res = null;
+    for (int i = arr.length - 1; i >= 0 ; i--) {
+      res = new ListNode(arr[i], res);
+    }
+
+    return res;
   }
 
 }

@@ -3,6 +3,7 @@ package linked_list;
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+import utils.Utils;
 
 public class A_ReverseLinkedListTest {
 
@@ -11,13 +12,12 @@ public class A_ReverseLinkedListTest {
   @Test
   public void reverseList_populatedHeadReturnsReversedListNode() {
     // given
-    ListNode input = new ListNode(0, new ListNode(1, new ListNode(2, new ListNode(3))));
-
+    ListNode input = Utils.createListNodeHead(new int[]{0,1,2,3});
     // when
     ListNode actual = undertest.reverseList(input);
 
     // then
-    ListNode expected = new ListNode(3, new ListNode(2, new ListNode(1, new ListNode(0))));
+    ListNode expected = Utils.createListNodeHead(new int[]{3,2,1,0});
     assertEquals(expected, actual);
   }
 
