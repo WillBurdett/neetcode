@@ -8,7 +8,7 @@ public class A_ReverseLinkedList {
 
     while (curr != null) {
       // storing the next node from the current one we're looking at
-      ListNode temp = curr.next;
+      ListNode nxt = curr.next;
 
       // set the current nodes previous field to the 'prev' node we saved above
       curr.next = prev;
@@ -17,9 +17,31 @@ public class A_ReverseLinkedList {
       prev = curr;
 
       // we set the current node to the next one we stored earlier
-      curr = temp;
+      curr = nxt;
     }
     return prev;
+  }
+
+  // requires more memory O(n)
+  public ListNode recursivelyReverseList(ListNode head) {
+
+    // check head is not null
+    if (head == null) {
+      return null;
+    }
+
+    // create newHead from head
+    ListNode newHead = head;
+
+    // so long as we aren't on the last node
+    if (head.next != null){
+      newHead = recursivelyReverseList(head.next);
+      head.next.next = head;
+    }
+
+    head.next = null;
+
+    return newHead;
   }
 
 }
