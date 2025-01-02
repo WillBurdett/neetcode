@@ -18,13 +18,13 @@ public class I_LongestConsecutiveSequence {
 
     for (Integer n:
         numSet) {
-      // check if it's start of sequence i.e. has number to left
+      // check if it's start of sequence i.e. has no number to the left in a sorted array
       if (!numSet.contains(n - 1)){
         int length = 0;
           while (numSet.contains(n + length)){
             length += 1;
           }
-         longest = length > longest ? length : longest;
+         longest = Math.max(longest, length);
       }
     }
 
